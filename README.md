@@ -1,7 +1,37 @@
-# allkingj.github.io
+#allkingj.github.io
 
-- github web
+###[简介]
 
-##项目文档地址
+---
++ 使用express+vue搭建个人博客 项目官网
++ 官网：https://allkingj.github.io/
++ 源码地址：https://github.com/allkingj/allkingj（欢迎star）
 
-- https://allkingj.github.io/
+###[下载]
+
+---
++ https下载链接:https://github.com/allkingj/allkingj.git
++ ```git clone https://github.com/allkingj/allkingj.git```
+
+###[使用]
+
+---
++ node版本 6.x+
+```
+    安装 npm i 
+    运行 npm run dev
+```
+
+###[交流]
+
+---
+
+####提问
+#####注意，作者只受理以下提问方式，其他方式直接忽略
+- 直接在 github issues 提交问题
+
+###关于作者
+
+---
+一个低调的前端开发工程师
+
