@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>注意事项 · GitBook</title>
+        <title>api接口文档 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,8 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    <link rel="next" href="db.html" />
     
-    <link rel="prev" href="list.html" />
+    
+    <link rel="prev" href="servicelogic.html" />
     
 
     </head>
@@ -100,12 +102,12 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2" data-path="../use/">
+        <li class="chapter " data-level="1.2" data-path="./">
             
-                <a href="../use/">
+                <a href="./">
             
                     
-                    使用文档
+                    使用文档--服务端
             
                 </a>
             
@@ -114,9 +116,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.2.1" data-path="../use/npm.html">
+        <li class="chapter " data-level="1.2.1" data-path="npm.html">
             
-                <a href="../use/npm.html">
+                <a href="npm.html">
             
                     
                     安装包介绍
@@ -127,22 +129,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.2" data-path="../use/middleware.html">
+        <li class="chapter " data-level="1.2.2" data-path="servicelogic.html">
             
-                <a href="../use/middleware.html">
-            
-                    
-                    中间件介绍
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.2.3" data-path="../use/servicelogic.html">
-            
-                <a href="../use/servicelogic.html">
+                <a href="servicelogic.html">
             
                     
                     业务逻辑介绍
@@ -153,9 +142,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.4" data-path="../use/api.html">
+        <li class="chapter active" data-level="1.2.3" data-path="api.html">
             
-                <a href="../use/api.html">
+                <a href="api.html">
             
                     
                     api接口文档
@@ -166,9 +155,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.5" data-path="../use/db.html">
+        <li class="chapter " data-level="1.2.4" data-path="db.html">
             
-                <a href="../use/db.html">
+                <a href="db.html">
             
                     
                     数据库文档
@@ -184,9 +173,54 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3" data-path="./">
+        <li class="chapter " data-level="1.3" data-path="../client/">
             
-                <a href="./">
+                <a href="../client/">
+            
+                    
+                    使用文档--客户端
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../client/npm.html">
+            
+                <a href="../client/npm.html">
+            
+                    
+                    安装包介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../client/servicelogic.html">
+            
+                <a href="../client/servicelogic.html">
+            
+                    
+                    业务逻辑介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../use/">
+            
+                <a href="../use/">
             
                     
                     二次开发
@@ -198,9 +232,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.3.1" data-path="list.html">
+        <li class="chapter " data-level="1.4.1" data-path="../use/list.html">
             
-                <a href="list.html">
+                <a href="../use/list.html">
             
                     
                     开发目录
@@ -211,9 +245,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.3.2" data-path="notice.html">
+        <li class="chapter " data-level="1.4.2" data-path="../use/notice.html">
             
-                <a href="notice.html">
+                <a href="../use/notice.html">
             
                     
                     注意事项
@@ -259,7 +293,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >注意事项</a>
+        <a href=".." >api接口文档</a>
     </h1>
 </div>
 
@@ -274,8 +308,43 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x6CE8;&#x610F;&#x4E8B;&#x9879;">&#x6CE8;&#x610F;&#x4E8B;&#x9879;</h1>
+                                <h1 id="api&#x63A5;&#x53E3;&#x6587;&#x6863;">api&#x63A5;&#x53E3;&#x6587;&#x6863;</h1>
+<pre><code>web&#x670D;&#x52A1;&#x5165;&#x53E3;
 
+    &#x5730;&#x5740;&#xFF1A;/
+    &#x7C7B;&#x578B;&#xFF1A;GET
+    &#x53C2;&#x6570;&#xFF1A;
+
+&#x767B;&#x5F55;&#x63A5;&#x53E3;
+
+    &#x5730;&#x5740;&#xFF1A;/api/login
+    &#x7C7B;&#x578B;&#xFF1A;GET
+    &#x53C2;&#x6570;&#xFF1A;String:mobile&#xFF0C;String:password
+
+&#x767B;&#x51FA;&#x63A5;&#x53E3;
+
+    &#x5730;&#x5740;&#xFF1A;/api/logout
+    &#x7C7B;&#x578B;&#xFF1A;GET
+    &#x53C2;&#x6570;&#xFF1A;
+
+&#x6CE8;&#x518C;&#x63A5;&#x53E3;
+
+    &#x5730;&#x5740;&#xFF1A;/api/register
+    &#x7C7B;&#x578B;&#xFF1A;POST
+    &#x53C2;&#x6570;&#xFF1A;String:mobile, String:password, String:username
+
+&#x9996;&#x9875;&#x63A5;&#x53E3;
+
+    &#x5730;&#x5740;&#xFF1A;/api/home
+    &#x7C7B;&#x578B;&#xFF1A;GET
+    &#x53C2;&#x6570;&#xFF1A;
+
+&#x7528;&#x6237;&#x4FE1;&#x606F;&#x63A5;&#x53E3;
+
+    &#x5730;&#x5740;&#xFF1A;/api/user
+    &#x7C7B;&#x578B;&#xFF1A;POST
+    &#x53C2;&#x6570;&#xFF1A;
+</code></pre>
                                 
                                 </section>
                             
@@ -302,10 +371,14 @@
 
             
                 
-                <a href="list.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 开发目录">
+                <a href="servicelogic.html" class="navigation navigation-prev " aria-label="Previous page: 业务逻辑介绍">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
+                
+                <a href="db.html" class="navigation navigation-next " aria-label="Next page: 数据库文档">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             
         
@@ -314,7 +387,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"注意事项","level":"1.3.2","depth":2,"previous":{"title":"开发目录","level":"1.3.1","depth":2,"path":"dev/list.md","ref":"dev/list.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"dev/notice.md","mtime":"2018-10-16T06:24:39.417Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-10-16T07:21:20.236Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"api接口文档","level":"1.2.3","depth":2,"next":{"title":"数据库文档","level":"1.2.4","depth":2,"path":"server/db.md","ref":"server/db.md","articles":[]},"previous":{"title":"业务逻辑介绍","level":"1.2.2","depth":2,"path":"server/servicelogic.md","ref":"server/servicelogic.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"server/api.md","mtime":"2018-11-16T11:38:26.016Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-11-21T06:59:50.014Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
